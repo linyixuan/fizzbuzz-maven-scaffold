@@ -1,15 +1,11 @@
-package org.codingTest;
-
 import static java.lang.String.valueOf;
 
 public class GameNumber {
-
     private final int number;
 
     public GameNumber(int i) {
         this.number = i;
     }
-
     @Override
     public String toString() {
         if (isaBoolean(3) && isaBoolean(5)){return "FizzBuzz";}
