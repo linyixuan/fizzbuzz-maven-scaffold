@@ -9,17 +9,17 @@ public class GameNumber {
 
     @Override
     public String toString() {
-        String result;
-        if (isaBoolean(3) && isaBoolean(5)) {
+        String result = null;
+        if (isaBoolean(15)) {
             result = "FizzBuzz";
-        }
-        if (isaBoolean(3)) {
+        } else if (isaBoolean(3)) {
             result = "Fizz";
-        }
-        if (isaBoolean(5)) {
+        } else if (isaBoolean(5)) {
             result = "Buzz";
+        } else {
+            result = valueOf(number);
+
         }
-        result = valueOf(number);
         return result;
     }
 
