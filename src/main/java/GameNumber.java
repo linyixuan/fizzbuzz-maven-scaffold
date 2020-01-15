@@ -8,9 +8,15 @@ public class GameNumber {
     }
     @Override
     public String toString() {
-        if (isaBoolean(3) && isaBoolean(5)){return "FizzBuzz";}
-        if (isaBoolean(3)){return "Fizz";}
-        if (isaBoolean(5)){return "Buzz";}
+        if (isaBoolean(3) && isaBoolean(5)){
+            return "FizzBuzz";
+        }
+        if (isaBoolean(3)){
+            return "Fizz";
+        }
+        if (isaBoolean(5)){
+            return "Buzz";
+        }
         return valueOf(number);
     }
 
