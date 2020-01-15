@@ -6,18 +6,21 @@ public class GameNumber {
     public GameNumber(int i) {
         this.number = i;
     }
+
     @Override
     public String toString() {
+        String result;
         if (isaBoolean(3) && isaBoolean(5)) {
-            return "FizzBuzz";
+            result = "FizzBuzz";
         }
         if (isaBoolean(3)) {
-            return "Fizz";
+            result = "Fizz";
         }
         if (isaBoolean(5)) {
-            return "Buzz";
+            result = "Buzz";
         }
-        return valueOf(number);
+        result = valueOf(number);
+        return result;
     }
 
     private boolean isaBoolean(int i) {
